@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-  import Main from './components/header/main.vue';
+  import Main from './components/main/main.vue';
 </script>
 
 <style lang="scss"></style>
