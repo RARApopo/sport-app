@@ -12,6 +12,7 @@
       @switchTabs="switchTabs"
     />
   </header>
+
   <main class="main">
     <component :is="tabs[currentTab]"></component>
   </main>
@@ -53,13 +54,14 @@
 
     &__inner {
       display: grid;
-      justify-items: center;
       grid-template-rows: 1fr 1fr;
+      justify-items: center;
     }
 
     &__subtitle {
-      font-family: 'Roboto-light';
       color: black;
+      font-family: 'Roboto-light';
+      font-size: 12px;
     }
 
     &__settings {
@@ -67,10 +69,9 @@
       top: 10px;
       right: 20px;
       background-color: transparent;
-      border: none;
       color: inherit;
-      cursor: pointer;
       transition: all 0.2s linear;
+      cursor: pointer;
 
       &:hover {
         color: blue;

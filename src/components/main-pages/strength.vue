@@ -1,15 +1,25 @@
 <template>
-  <section class="strength">
-    <div class="container">
-      <div class="strength__inner">
-        <ul></ul>
-      </div>
-    </div>
-  </section>
+  <ul class="strenght__exercises">
+    <li class="strenght__exercise" v-for="(ex, i) in exercises">
+      {{ ex.name }}
+    </li>
+  </ul>
 </template>
-<script setup></script>
+<script setup>
+  import { ref } from 'vue';
+  import exercisesLookup from '../../exercises/exercises.lookup.js';
+
+  const exercises = ref(exercisesLookup);
+</script>
 <style lang="scss" scoped>
-  p {
-    color: blueviolet;
+  .strenght__exercises {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  .strenght__exercise {
+    cursor: pointer;
+    color: var(--main-bg-color-orange);
   }
 </style>
