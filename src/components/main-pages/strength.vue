@@ -1,3 +1,15 @@
-<template>This is Strength page</template>
+<template>
+  <section class="strength">
+    <div class="container">
+      <div class="strength__inner">
+        <ul></ul>
+      </div>
+    </div>
+  </section>
+</template>
 <script setup></script>
-<style></style>
+<style lang="scss" scoped>
+  p {
+    color: blueviolet;
+  }
+</style>

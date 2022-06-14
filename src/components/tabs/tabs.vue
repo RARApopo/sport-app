@@ -1,13 +1,17 @@
 <template>
   <section class="tabs">
-    <button
-      v-for="(_, tab) in tabs"
-      :key="tab"
-      class="tab"
-      @click="$emit('switchTabs', tab)"
-    >
-      {{ tab }}
-    </button>
+    <div class="container">
+      <div class="tabs__inner">
+        <button
+          v-for="(_, tab) in tabs"
+          :key="tab"
+          class="tab"
+          @click="$emit('switchTabs', tab)"
+        >
+          {{ tab }}
+        </button>
+      </div>
+    </div>
   </section>
 </template>
 <script setup>
@@ -17,8 +21,10 @@
 <style lang="scss" scoped>
   .tabs {
     background-color: var(--main-bg-color-orange);
-    display: flex;
-    justify-content: space-around;
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   .tab {
