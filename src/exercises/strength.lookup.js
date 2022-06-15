@@ -1,4 +1,4 @@
-const exercises = Object.freeze([
+const exercises = [
   {
     name: 'Pull-Ups',
   },
@@ -29,6 +29,6 @@ const exercises = Object.freeze([
   {
     name: 'Plank',
   },
-]);
+];
 
 export default exercises;

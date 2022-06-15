@@ -28,13 +28,21 @@
   }
 
   .tab {
+    position: relative;
     background-color: transparent;
     border: none;
     color: white;
     cursor: pointer;
     transition: all 0.2s linear;
-    &:hover {
-      color: blue;
+
+    &:focus::after {
+      content: '';
+      position: absolute;
+      top: 26px;
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: white;
     }
   }
 </style>

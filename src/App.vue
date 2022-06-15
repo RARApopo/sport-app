@@ -26,13 +26,13 @@
   import { ref } from 'vue';
 
   import Strength from './components/main-pages/strength.vue';
-  import Circuit from './components/main-pages/circuit.vue';
+  import Supersets from './components/main-pages/supersets.vue';
   import Statistics from './components/main-pages/statistics.vue';
   // Tabs logic need to write in tabs.vue
   const currentTab = ref('Strength');
   const tabs = {
     Strength,
-    Circuit,
+    Supersets,
     Statistics,
   };
   const switchTabs = (tab) => {

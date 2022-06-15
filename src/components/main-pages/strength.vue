@@ -1,13 +1,13 @@
 <template>
   <ul class="strenght__exercises">
-    <li class="strenght__exercise" v-for="(ex, i) in exercises">
+    <li class="strenght__exercise" v-for="(ex, i) in exercises" :key="i">
       {{ ex.name }}
     </li>
   </ul>
 </template>
 <script setup>
   import { ref } from 'vue';
-  import exercisesLookup from '../../exercises/exercises.lookup.js';
+  import exercisesLookup from '../../exercises/strength.lookup.js';
 
   const exercises = ref(exercisesLookup);
 </script>
